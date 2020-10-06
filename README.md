@@ -6,9 +6,12 @@ Kanazawa.
 
 [[`arXiv`](https://arxiv.org/abs/2007.15649)]
 [[`Project Page`](https://jasonyzhang.com/phosa/)]
+[[`Colab Notebook`](https://colab.research.google.com/drive/1QIoL2g0jdt5E-vYKCIojkIz21j3jyEvo?usp=sharing)]
 [[`Bibtex`](#CitingPHOSA)]
 
-In ECCV 2020 
+In ECCV 2020
+
+[<img src="doc/phosa_teaser.gif" width="500">](https://jasonyzhang.com/phosa/)
 
 ## Requirements
 * Python (tested on 3.7)
