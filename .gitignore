@@ -1,0 +1,13 @@
+input
+output
+models
+extra_data
+
+external
+detectron2
+multiperson
+
+.idea
+*.pyc
+*.swp
+.ipynb_checkpoints
