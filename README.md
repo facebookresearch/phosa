@@ -40,7 +40,9 @@ use:
 conda install pytorch=1.4.0 torchvision=0.5.0 cudatoolkit=10.0 -c pytorch
 ```
 
-## Setting up External Dependencies
+Alternatively, you can check out our interactive [Colab Notebook](https://colab.research.google.com/drive/1QIoL2g0jdt5E-vYKCIojkIz21j3jyEvo?usp=sharing).
+
+### Setting up External Dependencies
 
 Install the [fast version of Neural Mesh Renderer](https://github.com/JiangWenPL/multiperson/tree/master/neural_renderer):
 ```
@@ -64,7 +66,7 @@ git clone https://github.com/facebookresearch/frankmocap.git external/frankmocap
 sh scripts/download_data_body_module.sh
 ```
 
-You will also need to download the SMPL model from the [SMPL website](https://smpl.is.tue.mpg.de/). Make an account, and download the neutral model `basicModel_neutral_lbs_10_207_0_v1.0.0.pkl` and place it in `external/frankmocap/extra_data/smpl/basicModel_neutral_lbs_10_207_0_v1.0.0.pkl`
+You will also need to download the SMPL model from the [SMPL website](https://smpl.is.tue.mpg.de/). Make an account, and download the neutral model basicModel_neutral_lbs_10_207_0_v1.0.0.pkl and place it in extra_data/smpl/basicModel_neutral_lbs_10_207_0_v1.0.0.pkl
 
 
 If you did not clone detectron2 and frankmocap in the `external` directory, you will need to update the paths in the constants file.
@@ -72,7 +74,7 @@ If you did not clone detectron2 and frankmocap in the `external` directory, you 
 Currently, the mesh interpenetration loss is not included, so the results may look
 slightly different from the paper.
 
-## Meshes
+### Meshes
 
 The repository only includes a bicycle mesh that we created. For other object
 categories and mesh instances, you will need to download your own meshes. We list some
@@ -83,6 +85,9 @@ recommended sources [here](doc/mesh.md).
 ```
 python -m demo.py --filename input/000000038829.jpg
 ```
+
+We also have a [Colab Notebook](https://colab.research.google.com/drive/1QIoL2g0jdt5E-vYKCIojkIz21j3jyEvo?usp=sharing)
+to interactively visualize the outputs.
 
 
 ## <a name="CitingPHOSA"></a>Citing PHOSA
