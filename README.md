@@ -86,7 +86,7 @@ recommended sources [here](doc/mesh.md).
 ## Running the Code
 
 ```
-python -m demo.py --filename input/000000038829.jpg
+python demo.py --filename input/000000038829.jpg
 ```
 
 We also have a [Colab Notebook](https://colab.research.google.com/drive/1QIoL2g0jdt5E-vYKCIojkIz21j3jyEvo?usp=sharing)

@@ -3,6 +3,7 @@ ipdb
 matplotlib
 numpy
 opencv-python
+PyYAML>=5.1
 scikit-image
 scipy
 smplx
