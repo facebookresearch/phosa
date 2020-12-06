@@ -69,7 +69,7 @@ git clone https://github.com/facebookresearch/frankmocap.git external/frankmocap
 sh external/frankmocap/scripts/download_data_body_module.sh
 ```
 
-You will also need to download the SMPL model from the [SMPL website](https://smpl.is.tue.mpg.de/). Make an account, and download the neutral model basicModel_neutral_lbs_10_207_0_v1.0.0.pkl and place it in extra_data/smpl/basicModel_neutral_lbs_10_207_0_v1.0.0.pkl
+You will also need to download the SMPL model from the [SMPLify website](http://smplify.is.tue.mpg.de/). Make an account, and download the neutral model basicModel_neutral_lbs_10_207_0_v1.0.0.pkl and place it in extra_data/smpl/basicModel_neutral_lbs_10_207_0_v1.0.0.pkl
 
 
 If you did not clone detectron2 and frankmocap in the `external` directory, you will need to update the paths in the constants file.
