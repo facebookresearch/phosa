@@ -58,7 +58,7 @@ pip install external/multiperson/neural_renderer
 Install [Detectron2](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md):
 ```
 mkdir -p external
-git clone https://github.com/facebookresearch/detectron2.git external/detectron2
+git clone --branch v0.2.1 https://github.com/facebookresearch/detectron2.git external/detectron2
 pip install external/detectron2
 ```
 
@@ -66,7 +66,7 @@ Install [FrankMocap](https://github.com/facebookresearch/frankmocap) (The body m
 ```
 mkdir -p external
 git clone https://github.com/facebookresearch/frankmocap.git external/frankmocap
-sh scripts/download_data_body_module.sh
+sh external/frankmocap/scripts/download_data_body_module.sh
 ```
 
 You will also need to download the SMPL model from the [SMPL website](https://smpl.is.tue.mpg.de/). Make an account, and download the neutral model basicModel_neutral_lbs_10_207_0_v1.0.0.pkl and place it in extra_data/smpl/basicModel_neutral_lbs_10_207_0_v1.0.0.pkl
