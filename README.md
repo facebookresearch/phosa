@@ -35,6 +35,7 @@ We recommend using a conda environment:
 ```bash
 conda create -n phosa python=3.7
 conda activate phosa
+pip install -r requirements.txt
 ```
 
 Install the torch version that corresponds to your version of CUDA, eg for CUDA 10.0,
