@@ -13,6 +13,7 @@ Usage:
     python demo.py --filename my_image.jpg --class_name bicycle --lw_depth 1.
 """
 import argparse
+import json
 import logging
 import os
 
@@ -82,6 +83,11 @@ def get_args():
         default=None,
         help="Loss weight for person scale loss. (None: default weight)",
     )
+    parser.add_argument(
+        "--save_metadata",
+        action="store_true",
+        help="If added, saves computed metadata as filename.json.",
+    )
     args = parser.parse_args()
     logger.info(f"Calling with args: {str(args)}")
     return args
@@ -139,6 +145,12 @@ def main(args):
     top_down_path = frontal_path.replace(ext, "_top" + ext)
     Image.fromarray(top_down).save(top_down_path)
     logger.info(f"Saved top-down image to {top_down_path}.")
+    if args.save_metadata:
+        json_path = frontal_path.replace(ext, ".json")
+        metadata = model.get_parameters()
+        with open(json_path, "w") as f:
+            json.dump(metadata, json_path)
+        logger.info(f"Saved metadata to {json_path}.")
 
 
 if __name__ == "__main__":

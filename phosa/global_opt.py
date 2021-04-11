@@ -558,6 +558,23 @@ class PHOSA(nn.Module):
         mask = mask[0].detach().cpu().numpy().astype(bool)
         return image, mask
 
+    def get_parameters(self):
+        """
+        Computes a json-serializable dictionary of optimized parameters.
+
+        Returns:
+            parameters (dict): Dictionary mapping parameter name to list.
+        """
+        parameters = {
+            "scales_object": self.int_scales_object,
+            "scales_person": self.int_scales_person,
+            "rotations_object": rot6d_to_matrix(self.rotations_object),
+            "translations_object": self.translations_object,
+        }
+        for k, v in parameters.items():
+            parameters[k] = v.detach().cpu().numpy().tolist()
+        return parameters
+
     def save_obj(self, fname):
         with open(fname, "w") as fp:
             verts_combined = combine_verts(

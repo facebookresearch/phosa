@@ -46,7 +46,9 @@ CLASS_ID_MAP = {
     "surfboard": 37,
     "tennis": 38,
 }
-MEAN_INTRINSIC_SCALE = {  # Empirical intrinsic scales learned by our method.
+# Empirical intrinsic scales learned by our method. To convert from scale to size in
+# meters, multiply by 2 (i.e. scale of 1 corresponds to size of 2 meters).
+MEAN_INTRINSIC_SCALE = {
     "bat": 0.40,
     "bench": 0.95,
     "bicycle": 0.91,
