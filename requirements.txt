@@ -9,3 +9,7 @@ scikit-image
 scipy
 smplx
 tqdm
+
+# For bodymocap
+loguru
+torchgeometry
