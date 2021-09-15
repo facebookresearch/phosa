@@ -43,6 +43,7 @@ use:
 ```
 conda install pytorch=1.4.0 torchvision=0.5.0 cudatoolkit=10.0 -c pytorch
 ```
+Note that CUDA versions above 10.2 do not support Pytorch 1.4, so we recommend using `cudatoolkit=10.0`. If you need support for Pytorch >1.4 (e.g. for updated versions of detectron), follow the suggested updates to NMR [here](https://github.com/facebookresearch/phosa/issues/3).
 
 Alternatively, you can check out our interactive [Colab Notebook](https://colab.research.google.com/drive/1QIoL2g0jdt5E-vYKCIojkIz21j3jyEvo?usp=sharing).
 
