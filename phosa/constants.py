@@ -8,10 +8,7 @@ POINTREND_PATH = osp.join(EXTERNAL_DIRECTORY, "detectron2/projects/PointRend")
 POINTREND_CONFIG = osp.join(
     POINTREND_PATH, "configs/InstanceSegmentation/pointrend_rcnn_R_50_FPN_3x_coco.yaml"
 )
-POINTREND_MODEL_WEIGHTS = (
-    "detectron2://PointRend/InstanceSegmentation/pointrend_rcnn_R_50_FPN_3x_coco/"
-    "164955410/model_final_3c3198.pkl"
-)
+POINTREND_MODEL_WEIGHTS = "models/model_final_3c3198.pkl"
 
 # Configurations for BodyMocap.
 BODY_MOCAP_PATH = osp.join(EXTERNAL_DIRECTORY, "frankmocap")
