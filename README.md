@@ -63,7 +63,7 @@ mkdir -p external
 git clone --branch v0.2.1 https://github.com/facebookresearch/detectron2.git external/detectron2
 pip install external/detectron2
 # Download pre-trained PointRend weights
-wget -O models/model_final_3c3198.pkl https://github.com/jasonyzhang/data/blob/gh-pages/pointrend_model_final_3c3198.pkl?raw=True
+gdown -O models/model_final_3c3198.pkl https://drive.google.com/uc\?id\=1SoFg6AjB17CIekGvAf_sLIuCE7wEmVfK
 ```
 
 Install [FrankMocap](https://github.com/facebookresearch/frankmocap) (The body module is the same regressor trained on [EFT](https://github.com/facebookresearch/eft) data that we used in the paper):
